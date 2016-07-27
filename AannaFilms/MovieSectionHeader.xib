@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Reglo-Bold.otf">
+            <string>Reglo-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MovieSectionHeader" customModule="AannaFilms" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuK-G0-VR0" userLabel="contentView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="32"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foN-9L-WXB" userLabel="Bar">
+                            <rect key="frame" x="5" y="15" width="590" height="2"/>
+                            <color key="backgroundColor" red="0.83921568629999999" green="0.27058823529999998" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="2t4-gV-RAG"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Section Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSo-nl-x4R">
+                            <rect key="frame" x="248" y="6" width="103" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="Reglo-Bold" family="Reglo" pointSize="20"/>
+                            <color key="textColor" red="0.83921568629999999" green="0.27058823529999998" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="foN-9L-WXB" secondAttribute="bottom" constant="15" id="CdY-Ib-AUO"/>
+                        <constraint firstItem="foN-9L-WXB" firstAttribute="leading" secondItem="vuK-G0-VR0" secondAttribute="leading" constant="5" id="GEe-sH-GoY"/>
+                        <constraint firstAttribute="trailing" secondItem="foN-9L-WXB" secondAttribute="trailing" constant="5" id="MLM-zU-Dt0"/>
+                        <constraint firstItem="foN-9L-WXB" firstAttribute="top" secondItem="vuK-G0-VR0" secondAttribute="top" constant="15" id="PSN-2l-2AM"/>
+                        <constraint firstItem="MSo-nl-x4R" firstAttribute="centerY" secondItem="vuK-G0-VR0" secondAttribute="centerY" id="X7k-as-QzI"/>
+                        <constraint firstItem="MSo-nl-x4R" firstAttribute="centerX" secondItem="vuK-G0-VR0" secondAttribute="centerX" id="e7B-2s-Nvm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vuK-G0-VR0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="74j-6g-eJ3"/>
+                <constraint firstAttribute="bottom" secondItem="vuK-G0-VR0" secondAttribute="bottom" id="XcG-OU-kgM"/>
+                <constraint firstItem="vuK-G0-VR0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z2X-vf-63u"/>
+                <constraint firstAttribute="trailing" secondItem="vuK-G0-VR0" secondAttribute="trailing" id="sp5-j4-ttb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="title" destination="MSo-nl-x4R" id="8nF-35-PbQ"/>
+            </connections>
+            <point key="canvasLocation" x="272" y="-265"/>
+        </view>
+    </objects>
+</document>

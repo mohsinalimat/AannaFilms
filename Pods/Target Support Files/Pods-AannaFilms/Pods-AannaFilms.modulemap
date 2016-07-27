@@ -1,0 +1,6 @@
+framework module Pods_AannaFilms {
+  umbrella header "Pods-AannaFilms-umbrella.h"
+
+  export *
+  module * { export * }
+}
